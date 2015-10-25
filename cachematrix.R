@@ -38,10 +38,10 @@ cacheSolve <- function(x, ...) {
     }
   
   # If not, get the matrix
-    data <- x$get()
+    matrixForInv <- x$get()
   
   # Invert it
-    cache <- solve(data)
+    cache <- solve(matrixForInv)
   
   # Save in cache
     x$setinverse(cache)
